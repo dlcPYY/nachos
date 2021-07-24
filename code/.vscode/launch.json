@@ -1,0 +1,17 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "make",                        //这是在vscode调试选项卡里显示的配置名称
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/main",  //这里填写make生成的文件路径 
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}",
+            "MIMode": "gdb",
+            "preLaunchTask": "make",               //这里调用task.json里叫做make的任务，详见task.json
+            "miDebuggerPath": "/usr/bin/gdb"
+        }
+    ]
+}
